@@ -16,8 +16,6 @@ public class Field {
 
     @Override
     public String toString() {
-        return " {" +coordinates +
-                ", troops=" + troops +
-                '}';
+        return coordinates + troops.toString()+ " ";
     }
 }
