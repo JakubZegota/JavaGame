@@ -1,6 +1,7 @@
 package com.company.mapObjects;
 
 import com.company.fieldObjects.ICanMove;
+import com.company.fieldObjects.Troop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,17 @@ public class Map {
             }
         }
 
+    }
+
+    public Field getFieldFromMap(Coordinates xy){
+        var x = xy.getX();
+        var y = xy.getY();
+        return this.board.get(x).get(y);
+    }
+
+    public void addToField(Coordinates xy, Troop t){
+       var field = this.getFieldFromMap(xy);
+       field.addTroop(t);
     }
 
     public Map(){
