@@ -1,21 +1,24 @@
 package com.company.mapObjects;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Map {
-    private int size_X; // lista kolumn
-    private int size_Y; //lista wierszy
+    private int numberOfColumns; // lista kolumn
+    private int numberOfRows; //lista wierszy
     private List<List<Field>> board;
 
-    public Map(int size_X, int size_Y) {
-        this.size_X = size_X;
-        this.size_Y = size_Y;
-        this.board = new ArrayList<>(size_Y);
+    public Map(int numberOfColumns, int numberOfRows) {
+        this.numberOfColumns = numberOfColumns;
+        this.numberOfRows = numberOfColumns;
+        this.board = new ArrayList<>(numberOfRows);
         for (var row: board) {
-            row = new ArrayList<>(size_X);
+            row = new ArrayList<>(numberOfColumns);
         }
+    }
+
+    public Map(){
+        this(10, 10);
     }
 
     void display() {
