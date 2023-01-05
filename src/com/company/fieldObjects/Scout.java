@@ -12,3 +12,4 @@ public class Scout extends Troop implements ICanMove{
 
     }
 }
+
