@@ -10,12 +10,12 @@ public class Map {
 
     public Map(int numberOfColumns, int numberOfRows) {
         this.numberOfColumns = numberOfColumns;
-        this.numberOfRows = numberOfColumns;
+        this.numberOfRows = numberOfRows;
         this.board = new ArrayList<>(this.numberOfRows);
         for (int x = 0;x <this.numberOfRows; x++){
-            this.board.set(x, new ArrayList<>(numberOfColumns));
-            for (int y = 0; y < numberOfColumns; y++) {
-                this.board.get(x).set(y, new Field(x,y));
+            this.board.add(x, new ArrayList<>(numberOfColumns));
+            for (int y = 0; y < this.numberOfColumns; y++) {
+                this.board.get(x).add(y, new Field(x,y));
             }
         }
 
