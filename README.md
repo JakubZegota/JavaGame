@@ -5,5 +5,5 @@ This is a simple Java game project that is currently in the early stages of deve
 The goal of this project is to create a strategy game for recreational purposes and to learn more about game development and teamwork.
 
 Contributors:
-https://github.com/JakubZegota
+https://github.com/JakubZegota and 
 https://github.com/Janek1010
